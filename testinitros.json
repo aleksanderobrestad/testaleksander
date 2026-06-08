@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "5.2",
+  "title": "Plassholder for B-nivå-RoS",
+  "scope": "Denne RoSen inneholder kun ett scenrio og ett tiltak som antar at risiko- og sårbarhetsanalysen ligger på B-PC",
+  "scenarios": [
+    {
+      "title": "TESTSCENARIO DER VERDEN GÅR UNDER",
+      "scenario": {
+        "ID": "N2GiZ",
+        "description": "Hjelpes",
+        "threatActors": [
+          "Hacktivist",
+          "Script kiddie",
+          "Insider",
+          "Organised crime",
+          "Terrorist organisation",
+          "Nation/government",
+          "Reckless employee"
+        ],
+        "vulnerabilities": [
+          "Misconfiguration",
+          "Dependency vulnerability",
+          "Unauthorized access",
+          "Information leak",
+          "Excessive use",
+          "Flawed design",
+          "Input tampering",
+          "Unmonitored use"
+        ],
+        "risk": {
+          "probability": 300,
+          "consequence": 30000000
+        },
+        "actions": [
+          {
+            "title": "Søk dekning",
+            "action": {
+              "ID": "ABCDE",
+              "description": "Sørg for å søke dekning",
+              "url": "",
+              "status": "Not OK"
+            }
+          }
+        ],
+        "remainingRisk": {
+          "probability": 1,
+          "consequence": 1000000
+        }
+      }
+    }
+  ]
+}
