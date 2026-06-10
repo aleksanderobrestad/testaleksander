@@ -1,69 +1,52 @@
 {
   "schemaVersion": "5.2",
-  "title": "Plassholder for B-nivå-RoS",
+  "title": "TestRosPredefScenario",
   "scope": "Denne RoSen inneholder kun ett scenrio og ett tiltak som antar at risiko- og sårbarhetsanalysen ligger på B-PC",
   "scenarios": [
     {
-    "ID": "PDEFScenario01",
-    "title": "KI tar over verden",
-    "description": "Dummy scenario: An attacker gains access to sensitive data because access controls on the service are misconfigured.",
-    "threatActors": ["Organised crime", "Hacktivist"],
-    "vulnerabilities": ["Misconfiguration", "Unauthorized access"],
-    "risk": {
-      "summary": "Dummy risk summary for misconfigured access controls.",
-      "probability": 0.05,
-      "consequence": 3200000
-    },
-    "remainingRisk": {
-      "summary": "Dummy remaining risk summary after mitigations.",
-      "probability": 0.0025,
-      "consequence": 3200000
-    },
-    "actions": [
-      {
-        "ID": "PDEFAction0101",
-        "title": "Review and tighten access controls",
-        "description": "Dummy action: Audit the current access control configuration and apply least-privilege.",
-        "status": "Not OK",
-        "url": "",
-        "comment": ""
-      },
-      {
-        "ID": "PDEFAction0102",
-        "title": "Enable access logging and alerting",
-        "description": "Dummy action: Ensure access to sensitive data is logged and anomalies trigger alerts.",
-        "status": "Not OK",
-        "url": "",
-        "comment": ""
+      "title": "Obligatorisk KI-scenario",
+      "scenario": {
+        "ID": "PDEF1",
+        "description": "KI KI KI",
+        "threatActors": [
+          "Hacktivist",
+          "Script kiddie",
+          "Insider",
+          "Organised crime",
+          "Terrorist organisation",
+          "Nation/government",
+          "Reckless employee"
+        ],
+        "vulnerabilities": [
+          "Misconfiguration",
+          "Dependency vulnerability",
+          "Unauthorized access",
+          "Information leak",
+          "Excessive use",
+          "Flawed design",
+          "Input tampering",
+          "Unmonitored use"
+        ],
+        "risk": {
+          "probability": 300,
+          "consequence": 30000000
+        },
+        "actions": [
+          {
+            "title": "Forsvar deg mot KI",
+            "action": {
+              "ID": "SGjnH",
+              "description": "Beskrivelse",
+              "url": "",
+              "status": "Not OK"
+            }
+          }
+        ],
+        "remainingRisk": {
+          "probability": 1,
+          "consequence": 1000000
+        }
       }
-    ]
-  },
-  {
-    "ID": "PDEFScenario02",
-    "title": "Georg blir cyborg og allierer seg med skurkene",
-    "description": "Dummy scenario: A third-party dependency with a publicly known vulnerability is exploited to compromise the service.",
-    "threatActors": ["Script kiddie", "Organised crime"],
-    "vulnerabilities": ["Dependency vulnerability"],
-    "risk": {
-      "summary": "Dummy risk summary for vulnerable dependency.",
-      "probability": 1,
-      "consequence": 160000
-    },
-    "remainingRisk": {
-      "summary": "Dummy remaining risk summary after patching process.",
-      "probability": 0.05,
-      "consequence": 160000
-    },
-    "actions": [
-      {
-        "ID": "PDEFAction0201",
-        "title": "Enable automated dependency scanning",
-        "description": "Dummy action: Turn on Dependabot/automated scanning and triage alerts regularly.",
-        "status": "Not OK",
-        "url": "",
-        "comment": ""
-      }
-    ]
-  }
+    }
   ]
 }
